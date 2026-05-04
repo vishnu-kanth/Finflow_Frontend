@@ -1,8 +1,9 @@
 import axios from 'axios';
 
 // ✅ Dynamically set baseURL from .env for Dual Mode Support (Gateway vs Direct)
+const BASE_URL="http://localhost:9002"
 const api = axios.create({
-  baseURL: '/gateway',
+  baseURL: BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
